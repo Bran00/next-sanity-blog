@@ -37,7 +37,7 @@ export async function sanityFetch<const QueryString extends string>({
   if (perspective === "previewDrafts") {
     return client.fetch(query, await params, {
       stega,
-      perspective: "previewDrafts",
+      perspective: "drafts",
       // The token is required to fetch draft content
       token,
       // The `previewDrafts` perspective isn't available on the API CDN
